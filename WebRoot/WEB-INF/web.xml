@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <display-name></display-name>
+  <context-param>
+    <param-name>encoding</param-name>
+    <param-value>UTF-8</param-value>
+  </context-param>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>bookServlet</servlet-name>
+    <servlet-class>com.servlet.bookServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserIndexServlet</servlet-name>
+    <servlet-class>com.servlet.UserIndexServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>pageServlet</servlet-name>
+    <servlet-class>com.servlet.pageServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>bookDetail</servlet-name>
+    <servlet-class>com.servlet.bookDetail</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>bookDetail</servlet-name>
+    <url-pattern>/servlet/bookDetail</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>bookServlet</servlet-name>
+    <url-pattern>/servlet/bookServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>pageServlet</servlet-name>
+    <url-pattern>/servlet/pageServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserIndexServlet</servlet-name>
+    <url-pattern>/servlet/UserIndexServlet</url-pattern>
+  </servlet-mapping>
+  <!-- recordServlet -->
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>recordServlet</servlet-name>
+    <servlet-class>com.servlet.recordServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>recordServlet</servlet-name>
+    <url-pattern>/servlet/recordServlet</url-pattern>
+  </servlet-mapping>  
+  
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
